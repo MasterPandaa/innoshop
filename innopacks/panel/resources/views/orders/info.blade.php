@@ -160,18 +160,21 @@
     </div>
     <div class="card-body row">
       <div class="col-12 col-md-6 fs-5">
-        <div class="fs-5">{{ __('panel/order.customer_remarks') }}</div>
-        <div class="fs-6 mt-4">{{ $order->comment }}</div>
+        <p>{{ __('panel/order.customer_remarks') }}</p>
+        <div class=" mt-2 mb-5 ">
+            <h6> {{ $order->comment }}
+            </h6>
+        </div>
       </div>
       <div class="col-12 col-md-6 fs-5">
-        <div class="fs-5">{{ __('panel/order.administrator_remarks') }}</div>
-        <div class="fs-6 d-flex gap-3">
-          <div class="mt-4 col-3">
-            {{ $order->admin_note }}
-            <button class="btn btn-sm btn-primary mt-3" data-bs-toggle="modal"
-                  data-bs-target="#admin_note">编辑
-            </button>
-          </div>
+        <p >{{ __('panel/order.administrator_remarks') }}</p>
+        <div class="mt-2 ">
+          <h6 class="mb-2" >
+            {{ $order->admin_note }} 
+        </h6>  
+            <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#admin_note">
+             编辑
+            </button>      
           <div class="modal fade" id="admin_note" tabindex="-1" role="dialog" aria-labelledby="admin_note"
                aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered ">
