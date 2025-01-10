@@ -158,18 +158,20 @@
     <div class="card-header">
       <h5 class="card-title mb-0">{{ __('front/checkout.order_comment') }}</h5>
     </div>
-    <div class="card-body d-flex">
-      <div class="col-md-6 fs-5 ">
-        <div class="fs-5 ">{{ __('panel/order.customer_remarks') }}</div>
+    <div class="card-body row">
+      <div class="col-12 col-md-6 fs-5">
+        <div class="fs-5">{{ __('panel/order.customer_remarks') }}</div>
         <div class="fs-6 mt-4">{{ $order->comment }}</div>
       </div>
-      <div class="col-md-6 fs-5">
-        <div class=" fs-5">{{ __('panel/order.administrator_remarks') }}</div>
-        <div class="fs-6  d-flex gap-3">
-          <div class="mt-4 col-3">{{ $order->admin_note }}</div>
-          <button class="btn btn-primary mt-3 " style="height: 30px;" data-bs-toggle="modal"
+      <div class="col-12 col-md-6 fs-5">
+        <div class="fs-5">{{ __('panel/order.administrator_remarks') }}</div>
+        <div class="fs-6 d-flex gap-3">
+          <div class="mt-4 col-3">
+            {{ $order->admin_note }}
+            <button class="btn btn-sm btn-primary mt-3" data-bs-toggle="modal"
                   data-bs-target="#admin_note">编辑
-          </button>
+            </button>
+          </div>
           <div class="modal fade" id="admin_note" tabindex="-1" role="dialog" aria-labelledby="admin_note"
                aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered ">
