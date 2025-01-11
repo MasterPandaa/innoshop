@@ -26,7 +26,7 @@ return [
     'currency'           => 'Pengaturan Nilai Tukar',
     'customer_groups'    => 'Grup Pelanggan',
     'customers'          => 'Manajemen Pelanggan',
-    'dashboard'          => 'Ikhtisar',
+    'dashboard'          => 'Dashboard',
     'locale'             => 'Manajemen Bahasa',
     'locales'            => 'Pengaturan Bahasa',
     'localization'       => 'Lokalisasi',

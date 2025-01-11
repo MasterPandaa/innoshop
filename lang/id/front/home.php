@@ -9,9 +9,9 @@
 
 return [
     'feature_product'      => 'Produk Unggulan',
-    'feature_product_text' => 'Mengenakan ini, gaya menjadi tanda tangan Anda. Fashion ini, dengan desain yang unik dan bahan yang nyaman, menggabungkan sempurna individualitas dan elegan. Apapun acara hariannya atau acara khusus, ini adalah item yang tidak boleh dibuang dalam lemari ganti Anda. Segera sambut perubahan dan tunjukkan keindahan yang unik Anda.',
+    'feature_product_text' => 'Temukan buket bunga terbaik dengan desain unik dan fresh dari FlowerHub. Dapatkan pengalaman belanja bunga online yang mudah, aman, dan terpercaya. Kami menyediakan berbagai pilihan buket bunga untuk ulang tahun, pernikahan, anniversary, atau sekadar hadiah spesial. Dengan pengiriman cepat dan harga terjangkau, FlowerHub siap menemani setiap momen berharga Anda. Pesan sekarang dan buat hari-hari spesial semakin berkesan!',
     'news_blog'            => 'Blog Terbaru',
     'news_blog_text'       => 'Jelajahi masa depan, memimpin inovasi. Bergabunglah dengan kami dan saksikanlah lahirnya teknologi terbaru. Ikuti update blog dan berita terbaru kami sekarang!',
-    'bestseller'           => 'Terlaris',
-    'new_arrival'          => 'Baru Tiba',
+    'bestseller'           => 'Produk Terlaris',
+    'new_arrival'          => 'Produk Terbaru',
 ];

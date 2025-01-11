@@ -84,28 +84,28 @@ class Sidebar extends Component
                 'prefixes' => ['customers'],
                 'children' => $this->getCustomerSubRoutes(),
             ],
-            [
-                'title'    => __('panel/menu.top_content'),
-                'icon'     => 'bi-sticky',
-                'prefixes' => ['articles', 'catalogs', 'tags', 'pages'],
-                'children' => $this->getContentSubRoutes(),
-            ],
+            // [
+            //     'title'    => __('panel/menu.top_content'),
+            //     'icon'     => 'bi-sticky',
+            //     'prefixes' => ['articles', 'catalogs', 'tags', 'pages'],
+            //     'children' => $this->getContentSubRoutes(),
+            // ],
             [
                 'title'    => __('panel/menu.top_analytic'),
                 'icon'     => 'bi-bar-chart',
                 'prefixes' => ['analytics', 'analytics_order'],
                 'children' => $this->getAnalyticSubRoutes(),
             ],
-            [
-                'title'    => __('panel/menu.top_design'),
-                'icon'     => 'bi-palette',
-                'children' => $this->getDesignSubRoutes(),
-            ],
-            [
-                'title'    => __('panel/menu.top_plugin'),
-                'icon'     => 'bi-puzzle',
-                'children' => $this->getPluginSubRoutes(),
-            ],
+            // [
+            //     'title'    => __('panel/menu.top_design'),
+            //     'icon'     => 'bi-palette',
+            //     'children' => $this->getDesignSubRoutes(),
+            // ],
+            // [
+            //     'title'    => __('panel/menu.top_plugin'),
+            //     'icon'     => 'bi-puzzle',
+            //     'children' => $this->getPluginSubRoutes(),
+            // ],
             [
                 'title'    => __('panel/menu.top_setting'),
                 'icon'     => 'bi-gear',
@@ -238,9 +238,9 @@ class Sidebar extends Component
             ['route' => 'products.index', 'title' => __('panel/menu.products')],
             ['route' => 'categories.index', 'title' => __('panel/menu.categories')],
             ['route' => 'brands.index', 'title' => __('panel/menu.brands')],
-            ['route' => 'attributes.index', 'title' => __('panel/menu.attributes')],
-            ['route' => 'attribute_groups.index', 'title' => __('panel/menu.attribute_groups')],
-            ['route' => 'reviews.index', 'title' => __('panel/menu.reviews')],
+            // ['route' => 'attributes.index', 'title' => __('panel/menu.attributes')],
+            // ['route' => 'attribute_groups.index', 'title' => __('panel/menu.attribute_groups')],
+            // ['route' => 'reviews.index', 'title' => __('panel/menu.reviews')],
         ];
 
         return fire_hook_filter('component.sidebar.product.routes', $routes);
@@ -253,8 +253,8 @@ class Sidebar extends Component
     {
         $routes = [
             ['route' => 'customers.index', 'title' => __('panel/menu.customers')],
-            ['route' => 'customer_groups.index', 'title' => __('panel/menu.customer_groups')],
-            ['route' => 'socials.index', 'title' => __('panel/menu.sns')],
+            // ['route' => 'customer_groups.index', 'title' => __('panel/menu.customer_groups')],
+            // ['route' => 'socials.index', 'title' => __('panel/menu.sns')],
         ];
 
         return fire_hook_filter('component.sidebar.customer.routes', $routes);
@@ -278,17 +278,17 @@ class Sidebar extends Component
     /**
      * Get content sub routes
      */
-    public function getContentSubRoutes(): array
-    {
-        $routes = [
-            ['route' => 'articles.index', 'title' => __('panel/menu.articles')],
-            ['route' => 'catalogs.index', 'title' => __('panel/menu.catalogs')],
-            ['route' => 'tags.index', 'title' => __('panel/menu.tags')],
-            ['route' => 'pages.index', 'title' => __('panel/menu.pages')],
-        ];
+    // public function getContentSubRoutes(): array
+    // {
+    //     $routes = [
+    //         ['route' => 'articles.index', 'title' => __('panel/menu.articles')],
+    //         ['route' => 'catalogs.index', 'title' => __('panel/menu.catalogs')],
+    //         ['route' => 'tags.index', 'title' => __('panel/menu.tags')],
+    //         ['route' => 'pages.index', 'title' => __('panel/menu.pages')],
+    //     ];
 
-        return fire_hook_filter('component.sidebar.content.routes', $routes);
-    }
+    //     return fire_hook_filter('component.sidebar.content.routes', $routes);
+    // }
 
     /**
      * Get design sub routes.
@@ -323,17 +323,17 @@ class Sidebar extends Component
     public function getSettingSubRoutes(): array
     {
         $routes = [
-            ['route' => 'settings.index', 'title' => __('panel/menu.settings')],
+            // ['route' => 'settings.index', 'title' => __('panel/menu.settings')],
             ['route' => 'account.index', 'title' => __('panel/menu.account')],
             ['route' => 'admins.index', 'title' => __('panel/menu.admins')],
-            ['route' => 'roles.index', 'title' => __('panel/menu.roles')],
-            ['route' => 'countries.index', 'title' => __('panel/menu.countries')],
-            ['route' => 'states.index', 'title' => __('panel/menu.states')],
-            ['route' => 'regions.index', 'title' => __('panel/menu.regions')],
-            ['route' => 'locales.index', 'title' => __('panel/menu.locales')],
-            ['route' => 'currencies.index', 'title' => __('panel/menu.currencies')],
-            ['route' => 'tax_rates.index', 'title' => __('panel/menu.tax_rates')],
-            ['route' => 'tax_classes.index', 'title' => __('panel/menu.tax_classes')],
+            // ['route' => 'roles.index', 'title' => __('panel/menu.roles')],
+            // ['route' => 'countries.index', 'title' => __('panel/menu.countries')],
+            // ['route' => 'states.index', 'title' => __('panel/menu.states')],
+            // ['route' => 'regions.index', 'title' => __('panel/menu.regions')],
+            // ['route' => 'locales.index', 'title' => __('panel/menu.locales')],
+            // ['route' => 'currencies.index', 'title' => __('panel/menu.currencies')],
+            // ['route' => 'tax_rates.index', 'title' => __('panel/menu.tax_rates')],
+            // ['route' => 'tax_classes.index', 'title' => __('panel/menu.tax_classes')],
         ];
 
         return fire_hook_filter('component.sidebar.setting.routes', $routes);

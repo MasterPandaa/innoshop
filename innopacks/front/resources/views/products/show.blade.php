@@ -120,20 +120,20 @@
                   type="button">{{ __('front/product.description') }}</button>
         </li>
         @if($attributes)
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <button class="nav-link" data-bs-toggle="tab" data-bs-target="#product-description-attribute"
                     type="button">{{ __('front/product.attribute') }}</button>
-          </li>
+          </li> -->
           <li class="nav-item">
             <button class="nav-link" data-bs-toggle="tab" data-bs-target="#product-review"
                     type="button">{{ __('front/product.review') }}</button>
           </li>
         @endif
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <button class="nav-link correlation" data-bs-toggle="tab" data-bs-target="#product-description-correlation"
                   type="button">{{__('front/product.related_product')}}
           </button>
-        </li>
+        </li> -->
         @hookinsert('product.detail.tab.link.after')
       </ul>
       <div class="tab-content">

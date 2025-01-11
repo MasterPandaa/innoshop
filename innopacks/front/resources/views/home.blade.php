@@ -104,7 +104,7 @@
       </section>
     @endif
 
-    <section class="module-line">
+    <!-- <section class="module-line">
       <div class="module-product-tab">
         <div class="container">
           <div class="module-title-wrap">
@@ -121,7 +121,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
   </section>
 
   @hookinsert('home.content.bottom')

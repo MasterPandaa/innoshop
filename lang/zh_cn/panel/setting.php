@@ -61,7 +61,7 @@ return [
     'smtp_username'                     => '邮箱用户名',
     'telephone'                         => '联系电话',
     'website_data'                      => '网站设置',
-    'specials'                          => '固定页',
+    'specials'                          => 'specials',
     'brands'                            => '品牌列表',
     'products'                          => '产品列表',
 ];

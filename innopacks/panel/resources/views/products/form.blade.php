@@ -44,10 +44,10 @@ $weightClasses = [
        <button class="nav-link" id="seo-tab" data-bs-toggle="tab" data-bs-target="#seo-tab-pane" type="button"
         role="tab" aria-controls="seo-tab-pane" aria-selected="false">{{__('panel/product.seo')}}</button>
       </li>
-      <li class="nav-item" role="presentation">
+      <!-- <li class="nav-item" role="presentation">
        <button class="nav-link" id="relation-tab" data-bs-toggle="tab" data-bs-target="#relation-tab-pane" type="button"
         role="tab" aria-controls="relation-tab-pane" aria-selected="false">{{__('panel/product.related_products')}}</button>
-      </li>
+      </li> -->
       @hookinsert('panel.product.edit.tab.nav.bottom')
      </ul>
 
@@ -152,20 +152,20 @@ $weightClasses = [
             @hookinsert('panel.product.edit.sku.single.input.item.price.after')
         </div>
        </div>
-       @include('panel::products._form_variant')
+       <!-- @include('panel::products._form_variant')
         @hookinsert('panel.product.edit.form_variant.after')
-       @include('panel::products._form_attribute')
+       @include('panel::products._form_attribute') -->
       </div>
       <div class="tab-pane fade mt-3" id="addition-tab-pane" role="tabpanel" aria-labelledby="addition-tab" tabindex="3">
        <div class="d-flex flex-column flex-sm-row gap-3">
         <div class="col-12 col-sm-6">
-         <x-common-form-select :title="__('panel/product.tax_class')" name="tax_class_id"
+         <!-- <x-common-form-select :title="__('panel/product.tax_class')" name="tax_class_id"
           :value="old('tax_class_id', $product->tax_class_id ?? 0)" :options="$tax_classes" key="id" label="name" />
          <x-common-form-input :title="__('panel/product.weight')" name="weight"
           :value="old('weight', $product->weight ?? '')" :placeholder="__('panel/product.weight')" />
          <div class="pt-2"></div>
          <x-common-form-select :title="__('panel/product.weight_class')" name="weight_class"
-          :value="old('weight_class', $product->weight_class ?? 0)" :options="$weightClasses" key="id" label="name" />
+          :value="old('weight_class', $product->weight_class ?? 0)" :options="$weightClasses" key="id" label="name" /> -->
          <x-common-form-select :title="__('panel/product.brand')" name="brand_id"
           :value="old('brand_id', $product->brand_id ?? 0)" :options="$brands" key="id" label="name" />
          <x-common-form-input :title="__('panel/product.position')" name="position"
@@ -267,10 +267,10 @@ $weightClasses = [
         @endforeach
        </div>
       </div>
-      <div class="tab-pane fade mt-3 col-md-6" id="relation-tab-pane" role="tabpanel" aria-labelledby="relation-tab" tabindex="5">
+      <!-- <div class="tab-pane fade mt-3 col-md-6" id="relation-tab-pane" role="tabpanel" aria-labelledby="relation-tab" tabindex="5">
        <x-panel-form-autocomplete-list name="related_ids[]" :value="old('related_ids', $product->relations->pluck('relation_id')->toArray() ?? [])" placeholder="{{ __('panel/product.searching_products') }}"
                                        title="{{__('panel/product.related_products')}}" api="/api/panel/products" />
-      </div>
+      </div> -->
       @hookinsert('panel.product.edit.tab.pane.bottom')
      </div>
     </div>
